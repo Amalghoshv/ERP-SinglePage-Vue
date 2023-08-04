@@ -274,15 +274,17 @@
               </svg>
             </div>
 
-            <v-carousel :show-arrows="false">
+            <v-carousel :show-arrows="false" cycle>
               <v-carousel-item>
                 <div class="carousel-item-content">
                   <img
                     class="carousel-image"
-                    src="https://www.pwc.com/gx/en/hero/hero-2020/im-hero-2020.jpg"
+                    src="https://st.depositphotos.com/1144687/1902/i/450/depositphotos_19024147-stock-photo-drawing-city-over-book.jpg"
                     alt="Hotel"
                   />
-                  <div class="carousel-text">lorem</div>
+                  <div class="carousel-text"> <h1>Education</h1>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p>
+                  </div>
                 </div></v-carousel-item
               >
 
@@ -293,32 +295,36 @@
                     src="https://www.pwc.com/gx/en/hero/hero-2020/im-hero-2020.jpg"
                     alt="Hotel"
                   />
-                  <div class="carousel-text">lorem ipsum</div>
+                  <div class="carousel-text"><h1>Manufacturing</h1>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p></div>
                 </div></v-carousel-item
               >
 
               <v-carousel-item
                 ><div class="carousel-item-content">
                   <img
-                    class="carousel-image"
-                    src="https://www.pwc.com/gx/en/hero/hero-2020/im-hero-2020.jpg"
+                    class="carousel-image rounded"
+                    src="https://media.istockphoto.com/id/1446229465/photo/red-heart-and-stethoscope-are-on-blue-background.webp?b=1&s=170667a&w=0&k=20&c=1-aE7XV24f8qVr8fGnpvypir8fSxYaM9sHZurKoutj8="
                     alt="Hotel"
                   />
-                  <div class="carousel-text">lorem</div>
-                </div></v-carousel-item
-              >
+                  <div class="carousel-text"><h1>Healthcare</h1>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p></div>
+                </div></v-carousel-item>
+                <template v-slot:dot="{ active }">
+    <v-btn class="carousel-dot" :class="{ 'carousel-dot-active': active }" />
+  </template>
             </v-carousel>
           </div>
         </div>
 
-        <div>
-          <h2>CUSTOMER REVIEW</h2>
-        </div>
+        
       
     </div>
   </div>
 </template>
 <style scoped>
+
+
 .wave-container {
   position: relative;
 }
