@@ -18,7 +18,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: `../${path.basename(path.resolve('..'))}/public/frontend`,
+    outDir: `../${path.basename(path.resolve('..'))}/Erpsite/dist`,
     emptyOutDir: true,
     target: 'es2015',
   },
