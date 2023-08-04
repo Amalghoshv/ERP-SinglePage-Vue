@@ -258,8 +258,8 @@
           </v-row>
         </v-container>
       </div>
-        <div class="text-center">
-          <div>
+        <div class="text-center my-5">
+          <div class="5">
             <h1 class="text-center mt-5">INDUSTRIES</h1>
             <div class="text-center mb-5">
               <svg
@@ -274,7 +274,7 @@
               </svg>
             </div>
 
-            <v-carousel :show-arrows="false" cycle>
+            <v-carousel :show-arrows="false" hide-delimiters cycle>
               <v-carousel-item>
                 <div class="carousel-item-content">
                   <img
@@ -310,9 +310,7 @@
                   <div class="carousel-text"><h1>Healthcare</h1>
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p></div>
                 </div></v-carousel-item>
-                <template v-slot:dot="{ active }">
-    <v-btn class="carousel-dot" :class="{ 'carousel-dot-active': active }" />
-  </template>
+        
             </v-carousel>
           </div>
         </div>
