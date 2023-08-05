@@ -1683,7 +1683,7 @@ throttle-debounce@^3.0.1:
   resolved "https://registry.yarnpkg.com/throttle-debounce/-/throttle-debounce-3.0.1.tgz#32f94d84dfa894f786c9a1f290e7a645b6a19abb"
   integrity sha512-dTEWWNu6JmeVXY0ZYoPuH5cRIwc0MeGbJwah9KUNYSJwommQpCzTySTpEe8Gs1J23aeWEuAobe4Ag7EHVt/LOg==
 
-tippy.js@^6.3.7:
+tippy.js@^6.2.4, tippy.js@^6.3.7:
   version "6.3.7"
   resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-6.3.7.tgz#8ccfb651d642010ed9a32ff29b0e9e19c5b8c61c"
   integrity sha512-E1d3oP2emgJ9dRQZdf3Kkn0qJgI6ZLpyS5z6ZkY1DF3kaQaBsGZsndEpHwx+eC+tYM41HaSNvNtLx8tU57FzTQ==
@@ -1724,12 +1724,25 @@ vite@^2.7.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
+vue-navigation-bar@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/vue-navigation-bar/-/vue-navigation-bar-5.0.2.tgz#e3330117e8b3c2c296c8dd3660a4b45325b23234"
+  integrity sha512-yKa5srHUvyy/BYoUgtLq+13zmeYwWVm/TW905IpUkN90Dth0qcKiDnr0Pf9SSyoh9H0HXux51nhj/NfpA/62ow==
+  dependencies:
+    tippy.js "^6.2.4"
+    vue-screen-size "^2.0.0"
+
 vue-router@^4.0.12:
   version "4.0.12"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.12.tgz#8dc792cddf5bb1abcc3908f9064136de7e13c460"
   integrity sha512-CPXvfqe+mZLB1kBWssssTiWg4EQERyqJZes7USiqfW9B5N2x+nHlnsM1D3b5CaJ6qgCvMmYJnz+G0iWjNCvXrg==
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.18"
+
+vue-screen-size@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/vue-screen-size/-/vue-screen-size-2.1.0.tgz#57458cdd8fbad12f98b94277ebd856aa9d830b1d"
+  integrity sha512-q0qPNqzXlFMrpyfpfx+QNeydhgeg0lhT1/E8C4guoG2tQtLzMcpoIGW1TInnCt6CDgRLyPH7tN6BEpoY7+vYyA==
 
 vue-tailwind@^2.5.1:
   version "2.5.1"

@@ -1,5 +1,17 @@
 <template>
-  <div class=" bgimg ">
+ <v-app>
+  <div  class=" bgimg ">
+    <!-- <v-app-bar  collapse :elevation="2" ><v-app-bar-title>Hello</v-app-bar-title>
+
+  <template v-slot:append>
+    <v-btn icon="mdi-heart"></v-btn>
+
+    <v-btn icon="mdi-magnify"></v-btn>
+
+    <v-btn icon="mdi-dots-vertical"></v-btn>
+  </template>
+</v-app-bar> -->
+    
     <div class="d-flex  justify-space-between " :class="{ 'navbar': true, 'navbar-scroll': isScrolled, 'mt-5': !isScrolled }   ">
       <div class="">
         <img
@@ -10,11 +22,11 @@
       </div>
       <div class="mr-5">
         <ul class="d-flex mt-5" :class="{ 'mt-5': !isScrolled }">
-          <li class="mx-5" :style="{ color: isScrolled ? '#32de84' : 'whitesmoke' }"><a class="navlist" href="">HOME</a></li>
+         <li class="mx-5" :style="{ color: isScrolled ? '#32de84' : 'whitesmoke' }"><a class="navlist" href="">HOME</a></li>
           <li class="mx-5" :style="{ color: isScrolled ? '#32de84' : 'whitesmoke' }"><a class="navlist" href="">ABOUT US</a></li>
-          <li class="mx-5" :style="{ color: isScrolled ? '#32de84' : 'whitesmoke' }"><a class="navlist" href="">SERVICES</a></li>
-          <li class="mx-5" :style="{ color: isScrolled ? '#32de84' : 'whitesmoke' }"><a class="navlist" href="">INDUSTRIES</a></li>
-          <li class="mx-5" :style="{ color: isScrolled ? '#32de84' : 'whitesmoke' }"><a class="navlist" href="">CONTACT</a></li>
+            <li class="mx-5" :style="{ color: isScrolled ? '#32de84' : 'whitesmoke' }"><a class="navlist" href="">SERVICES</a></li>
+             <li class="mx-5" :style="{ color: isScrolled ? '#32de84' : 'whitesmoke' }"><a class="navlist" href="">INDUSTRIES</a></li>
+                <li class="mx-5" :style="{ color: isScrolled ? '#32de84' : 'whitesmoke' }"><a class="navlist" href="">CONTACT</a></li>
         </ul>
       </div>
     </div>
@@ -27,6 +39,7 @@
       </p>
     </div>
   </div>
+</v-app>
 </template>
 <script>
 </script>
@@ -63,8 +76,8 @@
   left: 0;
   right: 0;
   z-index: 100;
-  transition: background-color 0.3s ease; /* Add a transition for smooth color change */
-  /* Your existing styles */
+  transition: background-color 0.3s ease; 
+ 
 }
 
 .navbar-scroll {
@@ -97,6 +110,14 @@ li {
   flex-direction: column;
  
  
+}
+@media only screen and (max-width: 767px) {
+  .cards {
+    width: 100%;
+  }
+  .bg.cards {
+    margin-left: 0;
+  }
 }
 
 </style>

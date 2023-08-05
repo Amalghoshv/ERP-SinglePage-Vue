@@ -11,6 +11,7 @@
     "feather-icons": "^4.28.0",
     "frappe-ui": "^0.0.105",
     "vue": "^3.2.25",
+    "vue-navigation-bar": "^5.0.2",
     "vue-router": "^4.0.12",
     "vue-tailwind": "^2.5.1",
     "vuetify": "^3.3.11"

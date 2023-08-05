@@ -10,7 +10,7 @@
 .wave-top {
     background: transparent;
   width: 100%;
-  height: 100%; /* Adjust this height as needed */
+  height: 100%; 
   z-index: 1;
   position: absolute;
   top: 48.8%;
@@ -19,6 +19,14 @@
   
  
   
+}
+@media only screen and (max-width: 767px) {
+  .cards {
+    width: 100%;
+  }
+  .wave-top {
+     top:74.2%;
+  }
 }
 
 
