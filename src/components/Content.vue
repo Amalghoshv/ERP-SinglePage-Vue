@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="">
+    <div class="wave-container">
       <Wave />
     </div>
     <div id="about" class="container">
@@ -91,6 +91,7 @@
 <style scoped>
 .wave-container {
   position: relative;
+  
 }
 .responsive-carousel {
   max-width: 1200px; /* Set a maximum width for the carousel */
@@ -105,6 +106,7 @@
   text-align: center;
   padding: 20px;
 }
+
 
 .carousel-image {
   width: 100%;
@@ -121,12 +123,18 @@
   .responsive-carousel {
     max-width: 600px;
   }
+  .wave {
+    height: 200px; /* Adjust the height for larger screens if needed */
+    background-size: cover;
+  }
 }
 
 @media (max-width: 768px) {
   .responsive-carousel {
     max-width: 400px;
   }
+  .wave {
+    height: 150px; }
 }
 
 @media (max-width: 480px) {
@@ -138,6 +146,10 @@
     .carousel-image{
       max-height: 400px;
     }
+    .wave {
+    height: 100px; /* Adjust the height for smaller screens */
+    background-size: cover;
+  }
   
 }
 .wave {

@@ -1,5 +1,6 @@
 <template>
- <v-app>
+ 
+ 
   <div  class=" bgimg ">
     <!-- <v-app-bar  collapse :elevation="2" ><v-app-bar-title>Hello</v-app-bar-title>
 
@@ -11,9 +12,11 @@
     <v-btn icon="mdi-dots-vertical"></v-btn>
   </template>
 </v-app-bar> -->
+
     
     <div class="d-flex  justify-space-between " :class="{ 'navbar': true, 'navbar-scroll': isScrolled, 'mt-5': !isScrolled }   ">
-      <div class="">
+      <Nav/>
+      <div class="logo">
         <img
           src="https://www.enfono.com/images/logo/Enfono_Logo_Blue.png"
           style="width: 75%"
@@ -39,10 +42,9 @@
       </p>
     </div>
   </div>
-</v-app>
+
 </template>
-<script>
-</script>
+
 <style>
 .navlist::after {
   content: '';
@@ -94,6 +96,7 @@ li {
   font-weight: bold;
 }
 .txt{
+ 
     width: 330px;
   height: 200px;
   margin:130px
@@ -111,22 +114,49 @@ li {
  
  
 }
-@media only screen and (max-width: 767px) {
-  .cards {
-    width: 100%;
+@media (max-width: 768px) {
+  .mr-5 {
+    display: none;
   }
-  .bg.cards {
-    margin-left: 0;
+  .logo{
+    width: 45%;
+  }
+}
+@media (max-width: 1024px) {
+  .txt {
+    width: 250px;
+    height: 100;
+    margin: 50px;
+    margin-top:150px;
+    align-content:center ;
+  }
+  h1{
+    font-size: 22px;
+  }
+  p{
+    font-size:15px
+  }
+  .navlist{
+    font-size:11.5px
+  }
+  .logo{
+    width: 25%;
   }
 }
 
+
 </style>
 <script>
+import Nav from './Nav.vue'
 export default {
   data() {
     return {
       isScrolled: false,
     };
+    
+  },
+  components: {
+    Nav
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
